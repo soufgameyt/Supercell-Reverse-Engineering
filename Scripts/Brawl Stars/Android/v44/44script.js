@@ -54,7 +54,7 @@ const Connect = {
     init() {
         Interceptor.attach(Libg.offset(0x9ED4B0), { 
             onEnter(args) {
-                args[1].add(8).readPointer().writeUtf8String("0.0.0.0"); #ip
+                args[1].add(8).readPointer().writeUtf8String("0.0.0.0");
                 SetupMessaging.init();
             }
         });
