@@ -88,7 +88,7 @@ rpc.exports.init = function() {
     Logger.Print("[*][Connect::Init]")
     Connect.init("127.0.0.1", 9339);
     Logger.Print("[*][CryptoPatcher::Init]")
-	CryptoPatcher.init();
+    CryptoPatcher.init();
     Logger.Print("[*][Misc::Init]")
     Misc.init();
     Logger.Print("[*][Libg::Init] Finished!")
