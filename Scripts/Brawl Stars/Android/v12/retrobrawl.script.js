@@ -1,5 +1,3 @@
-//this is a script written entirely by me from scratch. Since RetroBrawl team decided to kick me out, I decided to make this script open source.
-
 var cache = {
     modules: {},
     options: {}
