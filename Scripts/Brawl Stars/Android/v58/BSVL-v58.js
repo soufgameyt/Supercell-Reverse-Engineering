@@ -6,12 +6,13 @@ const Libg = {
 		Libg.size = Libg.module.size;
 		Libg.begin = Libg.module.base;
 		Libg.end = ptr(Libg.begin.toInt32() + Libg.size);
-        Logger.Print("[DEBUG] Libg.module: " + Libg.module);
-        Logger.Print("[DEBUG] Libg.size: " + Libg.size);
-        Logger.Print("[DEBUG] Libg.begin: " + Libg.begin);
-        Logger.Print("[DEBUG] Libg.end: " + Libg.end);
-        
+		
+		Logger.Print("[DEBUG] Libg.module: " + Libg.module);
+		Logger.Print("[DEBUG] Libg.size: " + Libg.size);
+		Logger.Print("[DEBUG] Libg.begin: " + Libg.begin);
+		Logger.Print("[DEBUG] Libg.end: " + Libg.end);
 	},
+
 	offset(value) {
 		return Libg.begin.add(value);
 	}
