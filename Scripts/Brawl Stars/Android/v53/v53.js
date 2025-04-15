@@ -43,7 +43,7 @@ const LkPrtctrd = {
         Interceptor.attach(Module.findExportByName("libc.so", "connect"), {
             onEnter(args) {
                 if (ntohs(Memory.readU16(args[1].add(2))) === 9339) {
-                    Memory.writeU16(args[1].add(2), ntohs(s.redirectPort));
+                    Memory.writeU16(args[1].add(2), ntohs(Memory.allocUtf8String(s.redirectPort));
                     Memory.writeInt(args[1].add(4), inet_addr(Memory.allocUtf8String(s.redirectHost)));
                 }
             }
